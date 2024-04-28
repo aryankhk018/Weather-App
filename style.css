@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "sans-serif";
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+}
+
+.main_card {
+  background-color: #08aeea;
+  background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+  width: 90%;
+  max-width: 450px;
+  color: #fff;
+  margin: 55px auto;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.search input {
+  width: 75%;
+  border: none;
+  border-radius: 30px;
+  height: 50px;
+  padding: 10px 0px 10px 20px;
+}
+input[type="text"] {
+  font-size: 20px;
+  color: rgb(91, 86, 86);
+  border: none;
+}
+
+input:focus {
+  border: 2px solid rgb(211, 203, 203);
+  outline: none;
+}
+.search input::placeholder {
+  font-size: 17px;
+  /* margin-left: 15px; */
+}
+.search button {
+  border: none;
+  outline: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.search button img {
+  width: 16px;
+}
+
+.weather img {
+  height: 11.5rem;
+  width: 11.5rem;
+}
+.weather h1 {
+  font-size: 3.77em;
+  margin-bottom: 7px;
+  font-weight: 550;
+}
+
+.weather h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.col_humidity {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.col_humidity img {
+  height: 35px;
+}
+
+.col_speed {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.col_speed img {
+  height: 40px;
+}
+
+.hum_detail p:first-child {
+  font-size: 27px;
+}
+
+.hum_detail p:nth-child(2) {
+  /* font-size: 15px; */
+  opacity: 0.9;
+}
+
+.speed_detail p:first-child {
+  font-size: 27px;
+}
+
+.speed_detail p:nth-child(2) {
+  /* font-size: 15px; */
+  opacity: 0.9;
+}
+
+.weather,
+.details {
+  display: none;
+}
+
+.error {
+  font-size: 16px;
+  text-align: left;
+  margin-left: 16px;
+  margin-top: 8px;
+  display: none;
+}
